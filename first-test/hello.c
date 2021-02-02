@@ -9,6 +9,11 @@ rtems_task Init(
   rtems_task_argument ignored
 )
 {
-  printf( "\nHello World\n" );
-  exit( 0 );
+  int i = 0;
+  //printf( "\nHello World\n" );
+  while (true)
+  {
+    i++;
+  }
+  
 }

@@ -54,7 +54,7 @@ SYStem.Up
 
 ; --------------------------------------------------------------------------------
 ; setup DRAM
-DO ~~~~/../scripts/dcd_interpreter "&cfgFile"
+DO /home/stefan/t32/demo/arm/hardware/imx7/scripts/dcd_interpreter "&cfgFile"
 ; DO ~~/demo/arm/hardware/imx7/scripts/dcd_interpreter "&cfgFile"
 
 ; --------------------------------------------------------------------------------
@@ -86,7 +86,7 @@ Register.Set PC _start /CORE 1.
 
 ; --------------------------------------------------------------------------------
 ; start program execution
-Go.direct main
+;Go.direct main
 WAIT !STATE.RUN()
 
 ; --------------------------------------------------------------------------------
@@ -97,9 +97,9 @@ WAIT !STATE.RUN()
 PRIVATE &EtrAxiBase &EtrSize
 &EtrAxiBase=0x81000000
 &EtrSize=(0x00100000)/4.
-DO "~~/demo/arm/etc/embedded_trace_router/etr_utility.cmm" ETR1 set DAB    &EtrAxiBase
-DO "~~/demo/arm/etc/embedded_trace_router/etr_utility.cmm" ETR1 set RSZ    &EtrSize
-DO "~~/demo/arm/etc/embedded_trace_router/etr_utility.cmm" ETR1 set AXICTL 0x00000F00 0x00000FBF
+DO "/home/stefan/t32/demo/arm/etc/embedded_trace_router/etr_utility.cmm" ETR1 set DAB    &EtrAxiBase
+DO "/home/stefan/t32/demo/arm/etc/embedded_trace_router/etr_utility.cmm" ETR1 set RSZ    &EtrSize
+DO "/home/stefan/t32/demo/arm/etc/embedded_trace_router/etr_utility.cmm" ETR1 set AXICTL 0x00000F00 0x00000FBF
 Trace.METHOD ONCHIP
 Trace.TraceCONNECT ETR
 ETM.Trace ON
@@ -119,7 +119,7 @@ Var.AddWatch %SpotLight ast flags
 WinPOS 120. 25.
 Trace.List
 WinPOS 0. 32.
-Var.DRAW %DEFault sinewave
+
 
 ENDDO
 

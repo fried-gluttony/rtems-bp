@@ -80,11 +80,15 @@ WAIT !STATE.RUN()
 ;   DO ~~/demo/arm/etc/embedded_trace_router/etr_utility.cmm
 ; - we use parameters obtained from the ELF file here (section .ETR)
 PRIVATE &EtrAxiBase &EtrSize
-&EtrAxiBase=ADDRESS.OFFSET(sYmbol.SECADDRESS(.etr))
-&EtrSize=(sYmbol.SECEND(.etr)-sYmbol.SECADDRESS(.etr)+1.)/4.
-DO "~~/demo/arm/etc/embedded_trace_router/etr_utility.cmm" ETR1 set DAB    &EtrAxiBase
-DO "~~/demo/arm/etc/embedded_trace_router/etr_utility.cmm" ETR1 set RSZ    &EtrSize
-DO "~~/demo/arm/etc/embedded_trace_router/etr_utility.cmm" ETR1 set AXICTL 0x00000F00 0x00000FBF
+
+; ----------- SYMBOLS NOT FOUND ERROR, WITH RTEMS BINARIES, THUS COMMENTED OUT ---------------
+;&EtrAxiBase=ADDRESS.OFFSET(sYmbol.SECADDRESS(.etr))
+;&EtrSize=(sYmbol.SECEND(.etr)-sYmbol.SECADDRESS(.etr)+1.)/4.
+;DO "/home/stefan/t32/demo/arm/etc/embedded_trace_router/etr_utility.cmm" ETR1 set DAB    &EtrAxiBase
+;DO "/home/stefan/t32/demo/arm/etc/embedded_trace_router/etr_utility.cmm" ETR1 set RSZ    &EtrSize
+
+
+DO "/home/stefan/t32/demo/arm/etc/embedded_trace_router/etr_utility.cmm" ETR1 set AXICTL 0x00000F00 0x00000FBF
 Trace.METHOD ONCHIP
 Trace.TraceCONNECT ETR
 ETM.Trace ON
@@ -104,7 +108,7 @@ Var.AddWatch %SpotLight ast flags
 WinPOS 120. 25.
 Trace.List
 WinPOS 0. 32.
-Var.DRAW %DEFault sinewave
+
 
 ENDDO
 
