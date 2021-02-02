@@ -1,13 +1,13 @@
-# project  configured on Tue Feb  2 16:29:11 2021 by
+# project  configured on Tue Feb  2 16:34:35 2021 by
 # waf 2.0.19 (abi 20, python 20711f0 on linux2)
 # using ./waf configure --rtems=/home/stefan/rtems/5 --rtems-bsp=arm/imx7
 #
 ----------------------------------------
 Setting top to
-/home/stefan/VCR/rtems-bp/first-test
+/home/stefan/VCS/rtems-bp/first-test
 ----------------------------------------
 Setting out to
-/home/stefan/VCR/rtems-bp/first-test/build
+/home/stefan/VCS/rtems-bp/first-test/build
 -----------------------------------------
 ----------------------------------------
 RTEMS Version
@@ -941,7 +941,7 @@ int main() { return 0; }
 <==
 [1/1] Compiling [32mbuild/.conf_check_509462851c9724c0a8dfb70e8a94563b/test.c[0m
 
-['/home/stefan/rtems/5/bin/arm-rtems5-gcc', '-MMD', '../test.c', '-c', '-o/home/stefan/VCR/rtems-bp/first-test/build/.conf_check_509462851c9724c0a8dfb70e8a94563b/testbuild/test.c.1.o']
+['/home/stefan/rtems/5/bin/arm-rtems5-gcc', '-MMD', '../test.c', '-c', '-o/home/stefan/VCS/rtems-bp/first-test/build/.conf_check_509462851c9724c0a8dfb70e8a94563b/testbuild/test.c.1.o']
 yes
 -----------------------------------------
 Checking for cxx flags '-MMD'
@@ -950,7 +950,7 @@ int main() { return 0; }
 <==
 [1/1] Compiling [32mbuild/.conf_check_a483f89cb2b8760c1662d80180dd6fd4/test.cpp[0m
 
-['/home/stefan/rtems/5/bin/arm-rtems5-g++', '-MMD', '../test.cpp', '-c', '-o/home/stefan/VCR/rtems-bp/first-test/build/.conf_check_a483f89cb2b8760c1662d80180dd6fd4/testbuild/test.cpp.1.o']
+['/home/stefan/rtems/5/bin/arm-rtems5-g++', '-MMD', '../test.cpp', '-c', '-o/home/stefan/VCS/rtems-bp/first-test/build/.conf_check_a483f89cb2b8760c1662d80180dd6fd4/testbuild/test.cpp.1.o']
 yes
 ['/home/stefan/rtems/5/bin/arm-rtems5-gcc', '--version']
 out: arm-rtems5-gcc (GCC) 7.5.0 20191114 (RTEMS 5, RSB 5.1, Newlib 7947581)
@@ -985,10 +985,10 @@ void Init(rtems_task_argument arg) { (void)arg; }
 <==
 [1/2] Compiling [32mbuild/.conf_check_261484d99ea5da27480d47dee9a30c04/test.c[0m
 
-['/home/stefan/rtems/5/bin/arm-rtems5-gcc', '-qrtems', '-B/home/stefan/rtems/5/arm-rtems5/lib/', '-B/home/stefan/rtems/5/arm-rtems5/imx7/lib/', '--specs', 'bsp_specs', '-march=armv7-a', '-mthumb', '-mfpu=neon', '-mfloat-abi=hard', '-mtune=cortex-a7', '-ffunction-sections', '-fdata-sections', '-MMD', '../test.c', '-c', '-o/home/stefan/VCR/rtems-bp/first-test/build/.conf_check_261484d99ea5da27480d47dee9a30c04/testbuild/test.c.1.o']
+['/home/stefan/rtems/5/bin/arm-rtems5-gcc', '-qrtems', '-B/home/stefan/rtems/5/arm-rtems5/lib/', '-B/home/stefan/rtems/5/arm-rtems5/imx7/lib/', '--specs', 'bsp_specs', '-march=armv7-a', '-mthumb', '-mfpu=neon', '-mfloat-abi=hard', '-mtune=cortex-a7', '-ffunction-sections', '-fdata-sections', '-MMD', '../test.c', '-c', '-o/home/stefan/VCS/rtems-bp/first-test/build/.conf_check_261484d99ea5da27480d47dee9a30c04/testbuild/test.c.1.o']
 [2/2] Linking [33mbuild/.conf_check_261484d99ea5da27480d47dee9a30c04/testbuild/testprog[0m
 
-['/home/stefan/rtems/5/bin/arm-rtems5-gcc', '-qrtems', '-B/home/stefan/rtems/5/arm-rtems5/lib/', '-B/home/stefan/rtems/5/arm-rtems5/imx7/lib/', '--specs', 'bsp_specs', '-march=armv7-a', '-mthumb', '-mfpu=neon', '-mfloat-abi=hard', '-mtune=cortex-a7', '-ffunction-sections', '-fdata-sections', '-MMD', 'test.c.1.o', '-o/home/stefan/VCR/rtems-bp/first-test/build/.conf_check_261484d99ea5da27480d47dee9a30c04/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/home/stefan/rtems/5/bin/arm-rtems5-gcc', '-qrtems', '-B/home/stefan/rtems/5/arm-rtems5/lib/', '-B/home/stefan/rtems/5/arm-rtems5/imx7/lib/', '--specs', 'bsp_specs', '-march=armv7-a', '-mthumb', '-mfpu=neon', '-mfloat-abi=hard', '-mtune=cortex-a7', '-ffunction-sections', '-fdata-sections', '-MMD', 'test.c.1.o', '-o/home/stefan/VCS/rtems-bp/first-test/build/.conf_check_261484d99ea5da27480d47dee9a30c04/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 -------------------------------------------
 Checking for RTEMS_DEBUG
@@ -1011,7 +1011,7 @@ void Init(rtems_task_argument arg) { (void)arg; }
 <==
 [1/2] Compiling [32mbuild/.conf_check_d1138cde491707077f06f6a5aee1cc95/test.c[0m
 
-['/home/stefan/rtems/5/bin/arm-rtems5-gcc', '-qrtems', '-B/home/stefan/rtems/5/arm-rtems5/lib/', '-B/home/stefan/rtems/5/arm-rtems5/imx7/lib/', '--specs', 'bsp_specs', '-march=armv7-a', '-mthumb', '-mfpu=neon', '-mfloat-abi=hard', '-mtune=cortex-a7', '-ffunction-sections', '-fdata-sections', '-MMD', '../test.c', '-c', '-o/home/stefan/VCR/rtems-bp/first-test/build/.conf_check_d1138cde491707077f06f6a5aee1cc95/testbuild/test.c.1.o']
+['/home/stefan/rtems/5/bin/arm-rtems5-gcc', '-qrtems', '-B/home/stefan/rtems/5/arm-rtems5/lib/', '-B/home/stefan/rtems/5/arm-rtems5/imx7/lib/', '--specs', 'bsp_specs', '-march=armv7-a', '-mthumb', '-mfpu=neon', '-mfloat-abi=hard', '-mtune=cortex-a7', '-ffunction-sections', '-fdata-sections', '-MMD', '../test.c', '-c', '-o/home/stefan/VCS/rtems-bp/first-test/build/.conf_check_d1138cde491707077f06f6a5aee1cc95/testbuild/test.c.1.o']
 err: ../test.c:3:4: error: #error RTEMS_DEBUG is not defined
    #error RTEMS_DEBUG is not defined
     ^~~~~
@@ -1019,16 +1019,16 @@ err: ../test.c:3:4: error: #error RTEMS_DEBUG is not defined
    #error RTEMS_DEBUG is false
     ^~~~~
 
-from /home/stefan/VCR/rtems-bp/first-test: Test does not build: Traceback (most recent call last):
-  File "/home/stefan/VCR/rtems-bp/first-test/.waf-2.0.19-1f3c580272b15a03d2566843c5fe872a/waflib/Configure.py", line 333, in run_build
+from /home/stefan/VCS/rtems-bp/first-test: Test does not build: Traceback (most recent call last):
+  File "/home/stefan/VCS/rtems-bp/first-test/.waf-2.0.19-1f3c580272b15a03d2566843c5fe872a/waflib/Configure.py", line 333, in run_build
     bld.compile()
-  File "/home/stefan/VCR/rtems-bp/first-test/.waf-2.0.19-1f3c580272b15a03d2566843c5fe872a/waflib/Build.py", line 176, in compile
+  File "/home/stefan/VCS/rtems-bp/first-test/.waf-2.0.19-1f3c580272b15a03d2566843c5fe872a/waflib/Build.py", line 176, in compile
     raise Errors.BuildError(self.producer.error)
 BuildError: Build failed
  -> task in 'testprog' failed with exit status 1 (run with -v to display more information)
 
 no
-from /home/stefan/VCR/rtems-bp/first-test: The configuration failed
+from /home/stefan/VCS/rtems-bp/first-test: The configuration failed
 -------------------------------------------
 Checking for RTEMS_MULTIPROCESSING
 ==>
@@ -1050,7 +1050,7 @@ void Init(rtems_task_argument arg) { (void)arg; }
 <==
 [1/2] Compiling [32mbuild/.conf_check_e7c1b86201b201f3c15da2c2f5bb58bc/test.c[0m
 
-['/home/stefan/rtems/5/bin/arm-rtems5-gcc', '-qrtems', '-B/home/stefan/rtems/5/arm-rtems5/lib/', '-B/home/stefan/rtems/5/arm-rtems5/imx7/lib/', '--specs', 'bsp_specs', '-march=armv7-a', '-mthumb', '-mfpu=neon', '-mfloat-abi=hard', '-mtune=cortex-a7', '-ffunction-sections', '-fdata-sections', '-MMD', '../test.c', '-c', '-o/home/stefan/VCR/rtems-bp/first-test/build/.conf_check_e7c1b86201b201f3c15da2c2f5bb58bc/testbuild/test.c.1.o']
+['/home/stefan/rtems/5/bin/arm-rtems5-gcc', '-qrtems', '-B/home/stefan/rtems/5/arm-rtems5/lib/', '-B/home/stefan/rtems/5/arm-rtems5/imx7/lib/', '--specs', 'bsp_specs', '-march=armv7-a', '-mthumb', '-mfpu=neon', '-mfloat-abi=hard', '-mtune=cortex-a7', '-ffunction-sections', '-fdata-sections', '-MMD', '../test.c', '-c', '-o/home/stefan/VCS/rtems-bp/first-test/build/.conf_check_e7c1b86201b201f3c15da2c2f5bb58bc/testbuild/test.c.1.o']
 err: ../test.c:3:4: error: #error RTEMS_MULTIPROCESSING is not defined
    #error RTEMS_MULTIPROCESSING is not defined
     ^~~~~
@@ -1058,16 +1058,16 @@ err: ../test.c:3:4: error: #error RTEMS_MULTIPROCESSING is not defined
    #error RTEMS_MULTIPROCESSING is false
     ^~~~~
 
-from /home/stefan/VCR/rtems-bp/first-test: Test does not build: Traceback (most recent call last):
-  File "/home/stefan/VCR/rtems-bp/first-test/.waf-2.0.19-1f3c580272b15a03d2566843c5fe872a/waflib/Configure.py", line 333, in run_build
+from /home/stefan/VCS/rtems-bp/first-test: Test does not build: Traceback (most recent call last):
+  File "/home/stefan/VCS/rtems-bp/first-test/.waf-2.0.19-1f3c580272b15a03d2566843c5fe872a/waflib/Configure.py", line 333, in run_build
     bld.compile()
-  File "/home/stefan/VCR/rtems-bp/first-test/.waf-2.0.19-1f3c580272b15a03d2566843c5fe872a/waflib/Build.py", line 176, in compile
+  File "/home/stefan/VCS/rtems-bp/first-test/.waf-2.0.19-1f3c580272b15a03d2566843c5fe872a/waflib/Build.py", line 176, in compile
     raise Errors.BuildError(self.producer.error)
 BuildError: Build failed
  -> task in 'testprog' failed with exit status 1 (run with -v to display more information)
 
 no
-from /home/stefan/VCR/rtems-bp/first-test: The configuration failed
+from /home/stefan/VCS/rtems-bp/first-test: The configuration failed
 -------------------------------------------
 Checking for RTEMS_NEWLIB
 ==>
@@ -1089,10 +1089,10 @@ void Init(rtems_task_argument arg) { (void)arg; }
 <==
 [1/2] Compiling [32mbuild/.conf_check_41cb4e050210a61cff716d2adb997862/test.c[0m
 
-['/home/stefan/rtems/5/bin/arm-rtems5-gcc', '-qrtems', '-B/home/stefan/rtems/5/arm-rtems5/lib/', '-B/home/stefan/rtems/5/arm-rtems5/imx7/lib/', '--specs', 'bsp_specs', '-march=armv7-a', '-mthumb', '-mfpu=neon', '-mfloat-abi=hard', '-mtune=cortex-a7', '-ffunction-sections', '-fdata-sections', '-MMD', '../test.c', '-c', '-o/home/stefan/VCR/rtems-bp/first-test/build/.conf_check_41cb4e050210a61cff716d2adb997862/testbuild/test.c.1.o']
+['/home/stefan/rtems/5/bin/arm-rtems5-gcc', '-qrtems', '-B/home/stefan/rtems/5/arm-rtems5/lib/', '-B/home/stefan/rtems/5/arm-rtems5/imx7/lib/', '--specs', 'bsp_specs', '-march=armv7-a', '-mthumb', '-mfpu=neon', '-mfloat-abi=hard', '-mtune=cortex-a7', '-ffunction-sections', '-fdata-sections', '-MMD', '../test.c', '-c', '-o/home/stefan/VCS/rtems-bp/first-test/build/.conf_check_41cb4e050210a61cff716d2adb997862/testbuild/test.c.1.o']
 [2/2] Linking [33mbuild/.conf_check_41cb4e050210a61cff716d2adb997862/testbuild/testprog[0m
 
-['/home/stefan/rtems/5/bin/arm-rtems5-gcc', '-qrtems', '-B/home/stefan/rtems/5/arm-rtems5/lib/', '-B/home/stefan/rtems/5/arm-rtems5/imx7/lib/', '--specs', 'bsp_specs', '-march=armv7-a', '-mthumb', '-mfpu=neon', '-mfloat-abi=hard', '-mtune=cortex-a7', '-ffunction-sections', '-fdata-sections', '-MMD', 'test.c.1.o', '-o/home/stefan/VCR/rtems-bp/first-test/build/.conf_check_41cb4e050210a61cff716d2adb997862/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/home/stefan/rtems/5/bin/arm-rtems5-gcc', '-qrtems', '-B/home/stefan/rtems/5/arm-rtems5/lib/', '-B/home/stefan/rtems/5/arm-rtems5/imx7/lib/', '--specs', 'bsp_specs', '-march=armv7-a', '-mthumb', '-mfpu=neon', '-mfloat-abi=hard', '-mtune=cortex-a7', '-ffunction-sections', '-fdata-sections', '-MMD', 'test.c.1.o', '-o/home/stefan/VCS/rtems-bp/first-test/build/.conf_check_41cb4e050210a61cff716d2adb997862/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 -------------------------------------------
 Checking for RTEMS_POSIX_API
@@ -1115,10 +1115,10 @@ void Init(rtems_task_argument arg) { (void)arg; }
 <==
 [1/2] Compiling [32mbuild/.conf_check_1ca9fc3cbc4f7470b61b140f4bbf5710/test.c[0m
 
-['/home/stefan/rtems/5/bin/arm-rtems5-gcc', '-qrtems', '-B/home/stefan/rtems/5/arm-rtems5/lib/', '-B/home/stefan/rtems/5/arm-rtems5/imx7/lib/', '--specs', 'bsp_specs', '-march=armv7-a', '-mthumb', '-mfpu=neon', '-mfloat-abi=hard', '-mtune=cortex-a7', '-ffunction-sections', '-fdata-sections', '-MMD', '../test.c', '-c', '-o/home/stefan/VCR/rtems-bp/first-test/build/.conf_check_1ca9fc3cbc4f7470b61b140f4bbf5710/testbuild/test.c.1.o']
+['/home/stefan/rtems/5/bin/arm-rtems5-gcc', '-qrtems', '-B/home/stefan/rtems/5/arm-rtems5/lib/', '-B/home/stefan/rtems/5/arm-rtems5/imx7/lib/', '--specs', 'bsp_specs', '-march=armv7-a', '-mthumb', '-mfpu=neon', '-mfloat-abi=hard', '-mtune=cortex-a7', '-ffunction-sections', '-fdata-sections', '-MMD', '../test.c', '-c', '-o/home/stefan/VCS/rtems-bp/first-test/build/.conf_check_1ca9fc3cbc4f7470b61b140f4bbf5710/testbuild/test.c.1.o']
 [2/2] Linking [33mbuild/.conf_check_1ca9fc3cbc4f7470b61b140f4bbf5710/testbuild/testprog[0m
 
-['/home/stefan/rtems/5/bin/arm-rtems5-gcc', '-qrtems', '-B/home/stefan/rtems/5/arm-rtems5/lib/', '-B/home/stefan/rtems/5/arm-rtems5/imx7/lib/', '--specs', 'bsp_specs', '-march=armv7-a', '-mthumb', '-mfpu=neon', '-mfloat-abi=hard', '-mtune=cortex-a7', '-ffunction-sections', '-fdata-sections', '-MMD', 'test.c.1.o', '-o/home/stefan/VCR/rtems-bp/first-test/build/.conf_check_1ca9fc3cbc4f7470b61b140f4bbf5710/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/home/stefan/rtems/5/bin/arm-rtems5-gcc', '-qrtems', '-B/home/stefan/rtems/5/arm-rtems5/lib/', '-B/home/stefan/rtems/5/arm-rtems5/imx7/lib/', '--specs', 'bsp_specs', '-march=armv7-a', '-mthumb', '-mfpu=neon', '-mfloat-abi=hard', '-mtune=cortex-a7', '-ffunction-sections', '-fdata-sections', '-MMD', 'test.c.1.o', '-o/home/stefan/VCS/rtems-bp/first-test/build/.conf_check_1ca9fc3cbc4f7470b61b140f4bbf5710/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 -------------------------------------------
 Checking for RTEMS_SMP
@@ -1141,7 +1141,7 @@ void Init(rtems_task_argument arg) { (void)arg; }
 <==
 [1/2] Compiling [32mbuild/.conf_check_cacc7aa2df0ad628cae5585ef9e6e1ef/test.c[0m
 
-['/home/stefan/rtems/5/bin/arm-rtems5-gcc', '-qrtems', '-B/home/stefan/rtems/5/arm-rtems5/lib/', '-B/home/stefan/rtems/5/arm-rtems5/imx7/lib/', '--specs', 'bsp_specs', '-march=armv7-a', '-mthumb', '-mfpu=neon', '-mfloat-abi=hard', '-mtune=cortex-a7', '-ffunction-sections', '-fdata-sections', '-MMD', '../test.c', '-c', '-o/home/stefan/VCR/rtems-bp/first-test/build/.conf_check_cacc7aa2df0ad628cae5585ef9e6e1ef/testbuild/test.c.1.o']
+['/home/stefan/rtems/5/bin/arm-rtems5-gcc', '-qrtems', '-B/home/stefan/rtems/5/arm-rtems5/lib/', '-B/home/stefan/rtems/5/arm-rtems5/imx7/lib/', '--specs', 'bsp_specs', '-march=armv7-a', '-mthumb', '-mfpu=neon', '-mfloat-abi=hard', '-mtune=cortex-a7', '-ffunction-sections', '-fdata-sections', '-MMD', '../test.c', '-c', '-o/home/stefan/VCS/rtems-bp/first-test/build/.conf_check_cacc7aa2df0ad628cae5585ef9e6e1ef/testbuild/test.c.1.o']
 err: ../test.c:3:4: error: #error RTEMS_SMP is not defined
    #error RTEMS_SMP is not defined
     ^~~~~
@@ -1149,16 +1149,16 @@ err: ../test.c:3:4: error: #error RTEMS_SMP is not defined
    #error RTEMS_SMP is false
     ^~~~~
 
-from /home/stefan/VCR/rtems-bp/first-test: Test does not build: Traceback (most recent call last):
-  File "/home/stefan/VCR/rtems-bp/first-test/.waf-2.0.19-1f3c580272b15a03d2566843c5fe872a/waflib/Configure.py", line 333, in run_build
+from /home/stefan/VCS/rtems-bp/first-test: Test does not build: Traceback (most recent call last):
+  File "/home/stefan/VCS/rtems-bp/first-test/.waf-2.0.19-1f3c580272b15a03d2566843c5fe872a/waflib/Configure.py", line 333, in run_build
     bld.compile()
-  File "/home/stefan/VCR/rtems-bp/first-test/.waf-2.0.19-1f3c580272b15a03d2566843c5fe872a/waflib/Build.py", line 176, in compile
+  File "/home/stefan/VCS/rtems-bp/first-test/.waf-2.0.19-1f3c580272b15a03d2566843c5fe872a/waflib/Build.py", line 176, in compile
     raise Errors.BuildError(self.producer.error)
 BuildError: Build failed
  -> task in 'testprog' failed with exit status 1 (run with -v to display more information)
 
 no
-from /home/stefan/VCR/rtems-bp/first-test: The configuration failed
+from /home/stefan/VCS/rtems-bp/first-test: The configuration failed
 -------------------------------------------
 Checking for RTEMS_NETWORKING
 ==>
@@ -1180,8 +1180,8 @@ void Init(rtems_task_argument arg) { (void)arg; }
 <==
 [1/2] Compiling [32mbuild/.conf_check_25873bbb9770e7b69177cf36166475ce/test.c[0m
 
-['/home/stefan/rtems/5/bin/arm-rtems5-gcc', '-qrtems', '-B/home/stefan/rtems/5/arm-rtems5/lib/', '-B/home/stefan/rtems/5/arm-rtems5/imx7/lib/', '--specs', 'bsp_specs', '-march=armv7-a', '-mthumb', '-mfpu=neon', '-mfloat-abi=hard', '-mtune=cortex-a7', '-ffunction-sections', '-fdata-sections', '-MMD', '../test.c', '-c', '-o/home/stefan/VCR/rtems-bp/first-test/build/.conf_check_25873bbb9770e7b69177cf36166475ce/testbuild/test.c.1.o']
+['/home/stefan/rtems/5/bin/arm-rtems5-gcc', '-qrtems', '-B/home/stefan/rtems/5/arm-rtems5/lib/', '-B/home/stefan/rtems/5/arm-rtems5/imx7/lib/', '--specs', 'bsp_specs', '-march=armv7-a', '-mthumb', '-mfpu=neon', '-mfloat-abi=hard', '-mtune=cortex-a7', '-ffunction-sections', '-fdata-sections', '-MMD', '../test.c', '-c', '-o/home/stefan/VCS/rtems-bp/first-test/build/.conf_check_25873bbb9770e7b69177cf36166475ce/testbuild/test.c.1.o']
 [2/2] Linking [33mbuild/.conf_check_25873bbb9770e7b69177cf36166475ce/testbuild/testprog[0m
 
-['/home/stefan/rtems/5/bin/arm-rtems5-gcc', '-qrtems', '-B/home/stefan/rtems/5/arm-rtems5/lib/', '-B/home/stefan/rtems/5/arm-rtems5/imx7/lib/', '--specs', 'bsp_specs', '-march=armv7-a', '-mthumb', '-mfpu=neon', '-mfloat-abi=hard', '-mtune=cortex-a7', '-ffunction-sections', '-fdata-sections', '-MMD', 'test.c.1.o', '-o/home/stefan/VCR/rtems-bp/first-test/build/.conf_check_25873bbb9770e7b69177cf36166475ce/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/home/stefan/rtems/5/bin/arm-rtems5-gcc', '-qrtems', '-B/home/stefan/rtems/5/arm-rtems5/lib/', '-B/home/stefan/rtems/5/arm-rtems5/imx7/lib/', '--specs', 'bsp_specs', '-march=armv7-a', '-mthumb', '-mfpu=neon', '-mfloat-abi=hard', '-mtune=cortex-a7', '-ffunction-sections', '-fdata-sections', '-MMD', 'test.c.1.o', '-o/home/stefan/VCS/rtems-bp/first-test/build/.conf_check_25873bbb9770e7b69177cf36166475ce/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
