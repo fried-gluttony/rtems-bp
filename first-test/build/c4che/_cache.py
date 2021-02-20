@@ -4,5 +4,5 @@ BINDIR = '/usr/local/bin'
 LIBDIR = '/usr/local/lib'
 LONG_COMMANDS = 'no'
 PREFIX = '/usr/local'
-RTEMS_TOOLS = ['/home/stefan/rtems/5/bin']
+RTEMS_TOOLS = ['/home/rtems/dev/rtems/5/bin']
 SHOW_COMMANDS = 'no'

@@ -54,7 +54,7 @@ SYStem.Up
 
 ; --------------------------------------------------------------------------------
 ; setup DRAM
-DO /home/stefan/t32/demo/arm/hardware/imx7/scripts/dcd_interpreter "&cfgFile"
+DO /home/rtems/t32/demo/arm/hardware/imx7/scripts/dcd_interpreter "&cfgFile"
 ; DO ~~/demo/arm/hardware/imx7/scripts/dcd_interpreter "&cfgFile"
 
 ; --------------------------------------------------------------------------------
@@ -97,9 +97,9 @@ WAIT !STATE.RUN()
 PRIVATE &EtrAxiBase &EtrSize
 &EtrAxiBase=0x81000000
 &EtrSize=(0x00100000)/4.
-DO "/home/stefan/t32/demo/arm/etc/embedded_trace_router/etr_utility.cmm" ETR1 set DAB    &EtrAxiBase
-DO "/home/stefan/t32/demo/arm/etc/embedded_trace_router/etr_utility.cmm" ETR1 set RSZ    &EtrSize
-DO "/home/stefan/t32/demo/arm/etc/embedded_trace_router/etr_utility.cmm" ETR1 set AXICTL 0x00000F00 0x00000FBF
+DO "/home/rtems/t32/demo/arm/etc/embedded_trace_router/etr_utility.cmm" ETR1 set DAB    &EtrAxiBase
+DO "/home/rtems/t32/demo/arm/etc/embedded_trace_router/etr_utility.cmm" ETR1 set RSZ    &EtrSize
+DO "/home/rtems/t32/demo/arm/etc/embedded_trace_router/etr_utility.cmm" ETR1 set AXICTL 0x00000F00 0x00000FBF
 Trace.METHOD ONCHIP
 Trace.TraceCONNECT ETR
 ETM.Trace ON

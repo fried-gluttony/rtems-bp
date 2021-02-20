@@ -1,0 +1,31 @@
+&APPLICATION_FILE="./build/arm-rtems5-imx7/hello.exe"
+
+global &initialized
+
+if "&initialized"==""
+(
+         &initialized="1"
+
+         RESet
+         SYStem.RESet
+         SYStem.CPU IMX7DUAL-CA7
+         SYStem.Option ResBreak OFF
+         SYStem.Option WaitReset 30.0ms
+         SYStem.JtagClock CTCK 10MHz
+         CORE.ASSIGN 1.
+)
+
+break.IMPLEMENTATION PROGRAM ONCHIP
+sys.mode down
+sys.mode up
+go.direct
+wait 1s
+Break.direct
+go 0x80800000    ; You most likely have to adapt that based on what
+                  ; your U-Boot currently loads.
+wait !run()
+
+data.load "&APPLICATION_FILE"
+break.set _Terminate
+
+enddo
